@@ -1,0 +1,75 @@
+:root {
+  --soft-pink: #fce4ec;
+  --accent-pink: #f8bbd0;
+  --hover-pink: #f48fb1;
+  --text-dark: #3a3a3a;
+  --white: #ffffff;
+  --border-radius: 12px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--soft-pink);
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.admin-container {
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  width: 360px;
+  text-align: center;
+}
+
+h1 {
+  color: var(--accent-pink);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.admin-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-menu li {
+  margin: 0.5rem 0;
+}
+
+.admin-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  justify-content: center;
+  background-color: var(--accent-pink);
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+}
+
+.admin-menu li a:hover {
+  background-color: var(--hover-pink);
+}
+
+.admin-menu li i {
+  font-size: 1.2rem;
+}
